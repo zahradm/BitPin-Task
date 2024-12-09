@@ -4,9 +4,9 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework.permissions import IsAuthenticated
 from rest_framework import status
-from posts.models import Post, Rating
-from posts.serializers import PostListSerializer, PostSerializer
-from posts.permissions import IsAdminUser
+from app.posts.models import Post, Rating
+from app.posts.serializers import PostListSerializer, PostSerializer
+from app.posts.permissions import IsAdminUser
 
 
 class PostListView(APIView):

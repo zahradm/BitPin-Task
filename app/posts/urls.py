@@ -1,5 +1,5 @@
 from django.urls import path
-from posts.views import PostListView, PostRatingView, PostCreateView
+from app.posts.views import PostListView, PostRatingView, PostCreateView
 
 urlpatterns = [
     path('posts/', PostListView.as_view(), name='post-list'),
