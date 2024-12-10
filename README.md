@@ -21,7 +21,7 @@ This project is a web application that provides an API for managing **users** an
 To set up the application for development, execute the following command:
 
 ```bash
-docker-compose up -d --build
+docker compose up -d --build
 ```
 This will build the necessary containers and start the application in development mode.
 
@@ -31,12 +31,12 @@ To set up the application for production, follow these steps:
 Run the following command to start the application in production mode:
 
 ```bash
-docker-compose -f docker-compose.prod.yml up -d --build
+docker compose -f docker-compose.prod.yml up -d --build
 ```
 Once the containers are up and running, execute the migrations:
 
 ```bash
-docker-compose -f docker-compose.prod.yml exec web python manage.py migrate --noinput
+docker compose -f docker-compose.prod.yml exec web python manage.py migrate --noinput
 ```
 This will apply the database migrations for production.
 
