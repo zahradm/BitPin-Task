@@ -9,7 +9,7 @@ class PostListSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Post
-        fields = ['id', 'title', 'content', 'avg_rating', 'rating_count', 'user_score']
+        fields = ['id', 'title', 'avg_rating', 'rating_count', 'user_score']
 
     def get_user_score(self, obj):
         user = self.context['request'].user
