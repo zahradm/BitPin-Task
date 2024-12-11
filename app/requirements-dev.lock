@@ -25,8 +25,10 @@ click==8.1.7
 configargparse==1.7
     # via locust
 django==5.1.4
+    # via django-redis
     # via djangorestframework
     # via djangorestframework-simplejwt
+django-redis==5.4.0
 djangorestframework==3.15.2
     # via djangorestframework-simplejwt
 djangorestframework-simplejwt==5.3.1
@@ -67,6 +69,8 @@ pyjwt==2.10.1
     # via djangorestframework-simplejwt
 pyzmq==26.2.0
     # via locust
+redis==5.2.1
+    # via django-redis
 requests==2.32.3
     # via locust
 setuptools==75.6.0
